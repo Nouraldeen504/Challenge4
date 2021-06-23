@@ -1,0 +1,168 @@
+body {
+    background-image: url(images/bg-pattern-top-desktop.svg);
+    font-family: 'Spartan';
+}
+
+.container {
+    margin: 0 auto;
+    padding: 10em;
+}
+
+.top {
+    display: flex;
+    margin-bottom: 3em;
+}
+
+.content{
+    margin-right: 7em;
+    position: relative;
+    bottom: 2.5em;
+}
+
+.content h1 {
+    font-weight: bolder;
+    font-size: 3rem;
+    color: hsl(300, 43%, 22%);
+    margin-bottom: 0.1em;
+}
+
+.content p {
+    line-height: 1.5rem;
+    color: hsl(303, 10%, 53%);
+}
+
+.revs, .guru, .tech {
+    display: flex;
+    border-radius: 5px;
+    margin-bottom: 1em;
+    padding: 0em 2em;
+    font-weight: bold;
+    color: hsl(300, 43%, 22%);
+    background-color: hsl(300, 24%, 96%);
+}
+
+.rates span {
+    margin-left: 2em;
+}
+
+.guru {
+    position: relative;
+    left: 3em;
+}
+
+.tech {
+    position: relative;
+    left: 6em;
+}
+
+.users {
+    display: flex;
+    justify-content: space-between;
+    font-size: small;
+    width: fit-content;
+}
+
+.details {
+    display: flex;
+}
+
+.smith, .roberts, .wallace {
+    background-color: hsl(300, 43%, 22%);
+    color: hsl(0, 0%, 100%);
+    padding: 2em 2.5em;
+    margin-right: 2.25em;
+    border-radius: 10px;
+    width: 22em;
+    position: relative;
+}
+
+.roberts {
+    width: 22.5em;
+}
+
+span.buy {
+    color: hsl(333, 80%, 67%);
+    font-weight: lighter;
+}
+
+span.name {
+    color: hsl(300, 100%, 94%);
+}
+
+.users img {
+    height: 40px;
+    width: 40px;
+    border-radius: 100px;
+    margin-right: 2em;
+    margin-bottom: 1em;
+    position: relative;
+    top: 1.25em;
+}
+
+.users h5 {
+    line-height: 2em;
+}
+
+.users q {
+    line-height: 1.75em;
+    color: hsl(335, 26%, 86%);
+}
+
+/*positioning indigo boxes*/
+.smith {
+    bottom: 1.75em;
+}
+
+.wallace {
+    top: 1.75em;
+}
+
+
+@media screen and (max-width: 950px) {
+    body {
+        background-image: url(images/bg-pattern-bottom-mobile.svg);
+    }
+
+    .container {
+        margin: 0 auto;
+        padding: 2em 0em 0em 2em;
+        margin-bottom: 5em;
+    }
+
+    .users, .top{
+        flex-direction: column;
+        width: fit-content;
+    }
+
+    .users {
+        width: fit-content;
+    }
+
+    .top {
+        padding: 4em 0em 0em 0em;
+    }
+
+    .content {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .content br {
+        display: none;
+    }
+
+    .revs, .guru, .tech {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 2em;
+        left: 0;
+    }
+
+    .rates {
+        text-align: center;
+        width: fit-content;
+        height: fit-content;
+    }
+  }
